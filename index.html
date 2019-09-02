@@ -2,40 +2,105 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>abeldebeermusic.com</title>
-  <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: Helvetica, Arial, sans-serif;
-      font-size: 1.5em;
-    }
-    a, a:active, a:hover, a:visited {
-      color: white;
-    }
-    h1 {
-      text-transform: uppercase;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Abel de Beer</title>
+    <style>
+        body {
+            background: linear-gradient(-45deg, rgb(119, 3, 3) 0%, rgb(8, 135, 173) 100%);
+            background-color: black;
+            color: white;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 1.6em;
+            margin: 0;
+            padding: 0;
+        }
+        
+        a,
+        a:active,
+        a:hover,
+        a:visited {
+            color: white;
+        }
+        
+        header {
+            background: url(logo_transparent_white_small.svg) center center no-repeat;
+            height: 100vh;
+        }
+        
+        main {
+            height: 100%;
+            padding: 5vw;
+        }
+        
+        footer {
+            font-size: 0.6em;
+        }
+        
+        @media screen and (min-width: 700px) {
+            /* tablet & computer */
+            header {
+                background-size: calc(12vw + 17vh);
+                padding: 0 1vw;
+                position: fixed;
+                right: 0;
+                top: 0;
+                width: calc(40% - 2vw);
+            }
+            main {
+                align-items: center;
+                display: flex;
+                float: left;
+                height: auto;
+                margin: 0;
+                min-height: 100vh;
+                padding: 0 2vw;
+                width: calc(60% - 4vw);
+            }
+        }
+        
+        @media screen and (min-aspect-ratio: 13/9) and (max-width: 700px) {
+            /* mobile: landscape */
+            header {
+                background-size: calc(18vw + 26vh);
+                margin: 0vw;
+            }
+        }
+        
+        @media screen and (max-aspect-ratio: 13/9) and (max-width: 700px) {
+            /* mobile: portrait */
+            header {
+                background-size: calc(22vw + 32vh);
+                margin: 0 5vw;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <h1>Abel de Beer</h1>
-  <p>Electronic music, video tutorials and gear demos.</p>
-  <p>Find me on:</p>
-  <ul>
-    <li><a href="https://www.youtube.com/channel/UCi8rixS0X-ea2TsgCFQbB5A">YouTube</a></li>
-    <li><a href="https://www.instagram.com/abeldebeermusic/">Instagram</a></li>
-    <li><a href="https://www.facebook.com/abeldebeermusicpage/">Facebook</a></li>
-    <li><a href="https://twitter.com/abeldebeermusic">Twitter</a></li>
-  </ul>
-  <p>Coming soon:</p>
-  <ul>
-    <li><a href="https://abeldebeermusic.bandcamp.com/">Bandcamp</a></li>
-    <li>Spotify, Apple Music and other streaming services</li>
-  </ul>
+    <header>&nbsp;</header>
+    <main>
+        <div>
+            <p>Electronic music, video tutorials and gear demos.</p>
+            <p>Full videos: <a href="https://www.youtube.com/channel/UCi8rixS0X-ea2TsgCFQbB5A">YouTube</a></p>
+            <p>Clips and highlights:</p>
+            <ul>
+                <li><a href="https://www.instagram.com/abeldebeermusic/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/abeldebeermusicpage/">Facebook</a></li>
+                <li><a href="https://twitter.com/abeldebeermusic">Twitter</a></li>
+            </ul>
+            <p>Coming soon:</p>
+            <ul>
+                <li><a href="https://abeldebeermusic.bandcamp.com/">Bandcamp</a></li>
+                <li>Spotify, Apple Music and other streaming services</li>
+            </ul>
+            <footer>
+                <p>&nbsp;</p>
+                <p>E-mail: abeldebeermusic [at] gmail [dot] com.</p>
+                <p>&copy; Abel de Beer | Website hosted with <a href="https://github.com/abeldebeermusic/abeldebeermusic.github.io">GitHub</a></p>
+            </footer>
+        </div>
+    </main>
 </body>
 
 </html>
