@@ -28,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <style>
         body {
-            background: url(raindrops_smaller2.png) repeat-x top/800px, linear-gradient(-45deg, rgb(119, 3, 3) 0%, rgb(0, 127, 165) 100%), black;
+            background: url(raindrops_smaller2.png) repeat-x top/800px, linear-gradient(-45deg, rgb(110, 0, 0) 0%, rgb(0, 90, 128) 100%), black;
             color: white;
             font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
             font-size: 1.5em;
@@ -55,6 +55,8 @@
         }
         
         main {
+            align-items: center;
+            display: flex;
             min-height: calc(100vh - 40px);
             padding: 20px;
         }
@@ -79,8 +81,6 @@
                 display: none;
             }
             main {
-                align-items: center;
-                display: flex;
                 width: calc(60vw - 40px);
             }
         }
@@ -98,18 +98,17 @@
             header svg {
                 width: calc(27vh + 27vw);
             }
-            /* add vertically flipped background to main */
-            main:before {
-                background: url(raindrops_smaller2.png) repeat-x bottom/800px;
-                content: "";
-                margin: 0;
-                min-height: calc(100vh - 20px);
-                padding: 0;
-                position: absolute;
-                width: calc(100vw - 20px);
-                z-index: -1;
-                -webkit-transform: rotate(180deg);
-                transform: rotate(180deg);
+            /* add flipped background to main (bottom) section */
+            main {
+                background: url(raindrops_smaller2.png) repeat-x top/800px;
+                -webkit-transform: scaleY(-1);
+                -ms-transform: scaleY(-1);
+                transform: scaleY(-1);
+            }
+            main div.main-container {
+                -webkit-transform: scaleY(-1);
+                -ms-transform: scaleY(-1);
+                transform: scaleY(-1);
             }
         }
     </style>
@@ -240,7 +239,7 @@
         </svg>
     </header>
     <main>
-        <div>
+        <div class="main-container">
             <p>Electronic music, video tutorials and gear demos.</p>
             <p>Full videos: <a href="https://www.youtube.com/channel/UCi8rixS0X-ea2TsgCFQbB5A">YouTube</a></p>
             <p>Clips and highlights:</p>
