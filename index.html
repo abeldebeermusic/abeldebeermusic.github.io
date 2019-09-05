@@ -15,15 +15,6 @@
         gtag('js', new Date());
         gtag('config', 'UA-147075630-1');
     </script>
-    <script defer src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.0/dist/smooth-scroll.min.js"></script>
-    <script>
-        var scroll;
-
-        function scrollToMain() {
-            if (!scroll) scroll = new SmoothScroll();
-            scroll.animateScroll(document.querySelector('main'));
-        }
-    </script>
     <link href="https://unpkg.com/browse/normalize.css@8.0.1/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <style>
@@ -262,6 +253,16 @@
             </footer>
         </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.0/dist/smooth-scroll.min.js"></script>
+    <script>
+        var scroll;
+
+        function scrollToMain() {
+            if (!scroll) scroll = new SmoothScroll();
+            scroll.animateScroll(document.querySelector('main'));
+        }
+    </script>
 </body>
 
 </html>
