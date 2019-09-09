@@ -57,6 +57,10 @@
             color: white;
         }
         
+        ul {
+            margin-block-start: 0.25em;
+        }
+        
         header {
             align-items: center;
             display: flex;
@@ -82,20 +86,22 @@
         @media screen and (min-width: 700px) {
             /* tablet & computer */
             header {
+                justify-content: flex-end;
                 padding: 0;
                 position: fixed;
-                right: 0;
+                left: 0;
                 top: 0;
-                width: 40vw;
+                width: 44vw;
             }
             header svg {
-                width: calc(15vh + 15vw);
+                width: calc(17vh + 12vw);
             }
             header svg a {
                 display: none;
             }
             main {
-                width: calc(60vw - 40px);
+                float: right;
+                width: calc(55vw - 40px);
             }
         }
         
@@ -114,6 +120,7 @@
             }
             /* add flipped background to main (bottom) section */
             main {
+                align-items: flex-end;
                 background: url(raindrops_smaller2.png) repeat-x top/800px;
                 -webkit-transform: scaleY(-1);
                 -ms-transform: scaleY(-1);
@@ -257,14 +264,14 @@
         <div class="main-container">
             <p>Electronic music, video tutorials and gear demos.</p>
             <p>Full videos: <a href="https://www.youtube.com/channel/UCi8rixS0X-ea2TsgCFQbB5A">YouTube</a></p>
-            <p>Clips and highlights:</p>
+            <span>Clips and highlights:</span>
             <ul>
                 <li><a href="https://www.instagram.com/abeldebeermusic/">Instagram</a></li>
                 <li><a href="https://www.facebook.com/abeldebeermusicpage/">Facebook</a></li>
                 <li><a href="https://twitter.com/abeldebeermusic">Twitter</a></li>
                 <li><a href="https://abeldebeermusic.tumblr.com/">Tumblr</a></li>
             </ul>
-            <p>Coming soon:</p>
+            <span>Coming soon:</span>
             <ul>
                 <li>SoundCloud</li>
                 <li>Bandcamp</li>
