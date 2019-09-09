@@ -46,6 +46,7 @@
             color: white;
             font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
             font-size: 1.5em;
+            font-weight: normal;
             margin: 0;
             padding: 0;
         }
@@ -57,9 +58,30 @@
             color: white;
         }
         
+        a:hover {
+            text-shadow: 0px 0px 2px white;
+        }
+        
         ul {
-            margin-top: 0.25em;
+            list-style: none;
             margin-block-start: 0.25em;
+            margin-top: 0.25em;
+            padding-inline-start: 0.9em;
+        }
+        
+        ul li {
+            position: relative;
+            padding-left: 0.75em;
+        }
+        
+        ul li:before {
+            content: '\25b6';
+            font-size: 0.4em;
+            left: -0.3em;
+            position: absolute;
+            top: 0.9em;
+            width: 1em;
+            height: 1em;
         }
         
         header {
